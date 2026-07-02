@@ -1,0 +1,6 @@
+pandas
+selenium
+folium
+sqlalchemy
+flask_sqlalchemy
+flask

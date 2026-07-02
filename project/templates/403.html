@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>403</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/403.css') }}">
+</head>
+<body>
+    <div class="cat"></div>
+    <h1>403</h1>
+    <div class="okak">Access Denied</div>
+    <p>Похоже, доступ к этой странице закрыт. Даже деньги тут не помогут.</p>
+    <a href="{{ url_for('home') }}">Вернуться на главную</a>
+</body>
+</html>

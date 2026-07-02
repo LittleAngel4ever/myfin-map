@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="mainTitle">Корпорация кота "Окак"</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-left" data-translate="corpName">Корпорация кота "Окак"</div>
+        <div class="header-right">
+            <div class="dropdown">
+                <button class="header-btn dropdown-btn" data-translate="selectCurrency">Валюта ▾</button>
+                <div class="dropdown-content">
+                    <a href="#" data-currency="USD">🇺🇸 USD</a>
+                    <a href="#" data-currency="EUR">🇪🇺 EUR</a>
+                    <a href="#" data-currency="RUB">🇷🇺 RUB</a>
+                </div>
+            </div>
+    
+            <button id="lang-btn" class="header-btn">English</button>
+            <button id="theme-btn" class="header-btn">🌙</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="map-section">
+            {{ map_html|safe }}
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-left" data-translate="corpName">Корпорация кота "Окак"</div>
+        <div class="footer-right">
+            <a href="https://tuta.com/ru" class="footer-link" target="_blank">
+                <img src="{{ url_for('static', filename='assets/mail-icon.svg') }}" alt="Mail">
+            </a>
+            <a href="https://x.com" class="footer-link" target="_blank">
+                <img src="{{ url_for('static', filename='assets/twitter-icon.svg') }}" alt="Twitter">
+            </a>
+            <a href="https://t.me/CurrencyCourcesBot" class="footer-link" target="_blank">
+                <img src="{{ url_for('static', filename='assets/telegram-icon.svg') }}" alt="Telegram">
+            </a>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
