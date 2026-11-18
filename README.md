@@ -141,8 +141,8 @@ http://127.0.0.1:5000/dashboard
 
 ## Авторы
 
-Kirpich-12
-LittleAngel4ever
+* Kirpich-12
+* LittleAngel4ever
 
 ## Ссылка на репозиторий
 
